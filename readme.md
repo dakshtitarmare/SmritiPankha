@@ -1,136 +1,89 @@
-# SmritiPankha: AI-Powered Intelligent Medication Guardian
+<div align="center">
+  <h1>Smruti-Pankh (Smritipankha)</h1>
+  <h3><i>Empowering Caregivers, Protecting Memories</i></h3>
+  <p><b>A Game-Changer in AI-Driven Healthcare for Alzheimer’s & Dementia Care</b></p>
+</div>
 
-> **A non-intrusive, static AI assistant designed to ensure medication adherence and provide proactive support for Alzheimer's patients.**
+---
+
+<div align="center">
+
+[![Pitch Deck](https://img.shields.io/badge/View-Pitch_Deck-blue?style=for-the-badge&logo=canva)](https://www.canva.com/design/DAG-rjaelXM/0BuZI5Vn0Wp9W-4Cqg4Z7g/view?utm_content=DAG-rjaelXM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7521938d9a)
+[![Demo Video](https://img.shields.io/badge/Watch-Demo_Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/7wuuyMLfbOc?si=TzHmOoFdVtp8rC7Q)
+
+</div>
 
 ---
 
 ## 📖 Overview
 
-**SmritiPankha** (meaning "Memory Fan" in Sanskrit) is an innovative, patent-pending healthcare solution that addresses one of the most critical challenges in Alzheimer's care: medication adherence. This repository documents our project's vision, technical approach, and impact, while protecting our proprietary technology and intellectual property.
+**Smritipankha** is a novel, AI-powered ecosystem designed to bridge the gap between Alzheimer's patients and their caregivers. By leveraging advanced On-Device Computer Vision and IoT integration, we provide a safety net that ensures medication adherence, location safety, and emotional well-being—without compromising privacy.
 
-**Note:** This repository contains project documentation only. The source code and implementation details are proprietary and not publicly available due to licensing restrictions.
+> *"We don't just track; we care."*
 
----
+## 🚨 The Problem
 
-## The Problem
+Alzheimer's and Dementia affect millions globally, creating immense pressure on caregivers:
+*   **Medication Non-Adherence:** Patients often forget doses or overdose, leading to severe health decline.
+*   **Wandering Risk:** 60% of dementia patients wander, risking injury or getting lost.
+*   **Caregiver Burnout:** Constant monitoring is physically and emotionally draining.
 
-For the 5.3 million+ families in India caring for loved ones with Alzheimer's and dementia, medication management is a daily source of anxiety. Cognitive decline leads to:
+## 💡 The Solution: A Novel Approach
 
-* **Missed Doses:** Accelerating health deterioration
-* **Double Dosing:** Causing dangerous toxicity
-* **Caregiver Burnout:** Constant uncertainty about medication compliance
-* **Safety Risks:** Passive reminders (pillboxes, phone alerts) are easily ignored
-
-Current solutions fail to provide definitive confirmation of medication intake without compromising patient dignity or requiring constant caregiver presence.
-
----
-
-## 💡 Our Innovative Solution
-
-We've developed a **static, intelligent guardian device** that operates on a closed-loop safety model:
-
-1. **Intelligent Monitoring:** Device activates during scheduled medication times
-2. **Precision Recognition:** Identifies specific pills and medications
-3. **Action Verification:** Confirms actual intake via gesture analysis
-4. **Proactive Assistance:** Provides gentle voice guidance during confusion
-5. **Real-Time Updates:** Syncs logs to caregiver apps instantly
-
-The system is designed to be **unobtrusive, privacy-focused, and dignity-preserving** — no wearables, no constant surveillance.
+Smritipankha introduces a **distributed care system** that functions autonomously:
+1.  **AI-Verified Medication:** Unlike simple alarms, our system uses **Computer Vision** to *watch* and *verify* if the patient actually swallows the pill.
+2.  **Geofencing & Safety:** Real-time tracking with "Safe Zones". If a patient wanders, caregivers get an instant alert with live location.
+3.  **Privacy-First:** All facial recognition and behavior analysis happen **On-Device**, ensuring patient data never leaves the home unnecessarily.
 
 ---
 
-## 🧠 Technical Innovation
+## 📱 Working Prototype
 
-Our core intellectual property lies in the novel integration and refinement of computer vision technologies for healthcare applications:
+Our solution is not just a concept—it is a fully functional prototype.
 
-### Proprietary Advancements:
-* **Custom Pill Recognition Engine:** Specialized algorithms for identifying visually similar medications
-* **Context-Aware Action Recognition:** Advanced temporal analysis of medication intake gestures
-* **Adaptive Assistance Logic:** Intelligent prompting system that responds to patient confusion patterns
-* **Privacy-Preserving Architecture:** On-device processing with minimal data transmission
+### Caregiver Application & Dashboard
+The command center for caregivers to manage schedules, view history, and track location.
 
-### Research Foundation:
-While building upon established computer vision principles, our implementation represents significant innovation in:
-- Healthcare-specific model training methodologies
-- Edge computing optimizations for low-resource environments
-- Multi-modal sensor fusion for reliable verification
+![Application Interface](assets/ui_prototype.png)
 
----
+### Backend AI & Verification Logic
+How our system "sees" and "thinks" to ensure safety.
 
-## 🛡️ Intellectual Property Status
+![Backend AI Model](assets/backend_execution.png)
 
-This project is protected under multiple layers of intellectual property protection:
-
-* **Patents Pending:** Novel aspects of the system architecture and algorithms
-* **Proprietary Algorithms:** Custom-developed computer vision and AI models
-* **Licensed Technology:** Strategic use of open-source frameworks under compliant licensing
-* **Confidential Datasets:** Proprietary training data collected under ethical guidelines
-
-All implementations, including specific model architectures, training methodologies, and integration patterns, are proprietary and confidential.
+1.  **Patient Verification:** Identifies the patient.
+2.  **Action Recognition:** Detects "pill-to-mouth" and swallowing actions.
+3.  **Processing:** Analyzes video feed in real-time.
+4.  **Alert Generation:** Triggers SMS/App notifications based on success or failure.
 
 ---
 
-## 🏆 Impact & Validation
+## 🏗️ System Architecture & Technology Stack
 
-### Clinical Benefits:
-* **Patient Independence:** Enables self-medication with safety nets
-* **Caregiver Relief:** Reduces anxiety with definitive compliance confirmation
-* **Clinical Insights:** Generates adherence patterns valuable for treatment adjustments
-* **Safety Enhancement:** Prevents dangerous medication errors
+Our architecture is built for reliability, speed, and privacy.
 
-### Recognition:
-* Selected for **Google's AI for Social Good** initiative
-* Recognized by **NITI Aayog** for healthcare innovation potential
-* Validated through pilot studies with dementia care specialists
+![System Architecture](assets/system_architecture.png)
 
----
+### Tech Stack
 
-## 🔮 Future Directions
-
-While current implementation details remain proprietary, we are exploring:
-* Predictive health analytics based on behavioral patterns
-* Integration with electronic health record systems
-* Expansion to additional neurological conditions
-* Multi-patient institutional deployments
+| Component | Technology | Role |
+| :--- | :--- | :--- |
+| **Edge AI / Vision** | **Python (YOLOv8, Face_recognition)** | Runs on local device for real-time detection & privacy. |
+| **Mobile App** | **React Native** | Cross-platform (iOS/Android) for caregivers. |
+| **Backend / Cloud** | **Firebase** | Real-time database for sync & notifications. |
+| **Communications** | **Twilio API** | Critical SMS alerts and emergency calls. |
+| **Hardware** | **Raspberry Pi / Jetson (simulated on PC)** | The "brain" placed in the patient's room. |
 
 ---
 
-## 🤝 Collaboration & Contact
+## 🚀 Market Potential & Impact
 
-We believe in collaborative innovation while protecting our core IP:
-
-### For Researchers:
-We welcome academic discussions about:
-- Ethical AI in healthcare
-- Assistive technology for aging populations
-- Computer vision applications in medicine
-
-### For Healthcare Organizations:
-Interested in pilot programs or learning more about implementation?
-
-### For Investors:
-Looking to support scalable health-tech solutions?
-
-**Contact:** Please reach out through GitHub issues or via professional networks for serious inquiries regarding collaboration, investment, or implementation partnerships.
+*   **Growing Market:** With the aging global population, the Elder Care market is projected to reach **$2 Trillion**.
+*   **Scalability:** Our software-first approach allows deployment on generic hardware (cameras/phones), making it affordable.
+*   **Novelty:** We are the first to combine **Verification (Vision)** with **Management (App)** in a consumer-friendly package.
 
 ---
 
-## 📄 License & Usage
-
-This documentation is provided under **Creative Commons Attribution-NonCommercial 4.0 International License**.
-
-**Important:** The technology, algorithms, implementations, and specific methodologies described herein are **proprietary and protected**. Any commercial use, implementation, or derivation requires explicit written permission from the creators.
-
----
-
-## 🙏 Acknowledgments
-
-We gratefully acknowledge:
-* **Google's TensorFlow, MediaPipe, and Firebase teams** for their open-source contributions
-* **The Alzheimer's & Related Disorders Society of India** for their guidance
-* **Our pilot families** for their trust and feedback
-* **The open-source community** that makes innovation possible
-
----
-
-*"Technology should serve humanity with both intelligence and compassion."*
+<div align="center">
+  <p><i>Built with ❤️ for a safer tomorrow.</i></p>
+</div>
